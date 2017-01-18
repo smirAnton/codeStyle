@@ -78,21 +78,22 @@
        'data-blah': 5,
      };
      ```
-6. Prefer the object spread operator over to shallow-copy objects. Use the object rest operator to get a new object with certain properties omitted.
+   6. Prefer the object spread operator over to shallow-copy objects. Use the object rest operator to get a new object with certain properties omitted.
 
-  ```javascript
-  // very bad
-  const original = { a: 1, b: 2 };
-  const copy = Object.assign(original, { c: 3 }); // this mutates `original` ಠ_ಠ
-  delete copy.a; // so does this
+     ```javascript
+     // very bad
+     const original = { a: 1, b: 2 };
+     const copy = Object.assign(original, { c: 3 }); // this mutates `original` ಠ_ಠ
+     delete copy.a; // so does this
 
-  // bad
-  const original = { a: 1, b: 2 };
-  const copy = Object.assign({}, original, { c: 3 }); // copy => { a: 1, b: 2, c: 3 }
+     // bad
+     const original = { a: 1, b: 2 };
+     const copy = Object.assign({}, original, { c: 3 }); // copy => { a: 1, b: 2, c: 3 }
 
-  // good
-  const original = { a: 1, b: 2 };
-  const copy = { ...original, c: 3 }; // copy => { a: 1, b: 2, c: 3 }
+     // good
+     const original = { a: 1, b: 2 };
+     const copy = { ...original, c: 3 }; // copy => { a: 1, b: 2, c: 3 }
 
-  const { a, ...noA } = copy; // noA => { b: 2, c: 3 }
-  ```
+     const { a, ...noA } = copy; // noA => { b: 2, c: 3 }
+     ```
+     
