@@ -1,4 +1,4 @@
-#  POS application JavaScript Style Guide
+#  POS application Style Guide
 
 <b>Important!</b>
 <b>Use eslint with rules provided in .eslintrc (check root project's folder)</b>
