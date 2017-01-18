@@ -111,7 +111,7 @@
        // good
        const itemsCopy = [...items];
        ```
-    8. Use array destructuring. 
+   8. Use array destructuring. 
     
        ```javascript
        const arr = [1, 2, 3, 4];
