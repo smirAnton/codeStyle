@@ -96,7 +96,7 @@
 
      const { a, ...noA } = copy; // noA => { b: 2, c: 3 }
      ```
-    7. Use array spreads `...` to copy arrays.
+   7. Use array spreads `...` to copy arrays.
 
        ```javascript
        // bad
