@@ -96,4 +96,19 @@
 
      const { a, ...noA } = copy; // noA => { b: 2, c: 3 }
      ```
-     
+    7. Use array spreads `...` to copy arrays.
+
+       ```javascript
+       // bad
+       const len = items.length;
+       const itemsCopy = [];
+       let i;
+
+       for (i = 0; i < len; i += 1) {
+         itemsCopy[i] = items[i];
+       }
+
+       // good
+       const itemsCopy = [...items];
+       ```
+       
