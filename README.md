@@ -61,23 +61,23 @@
       posSystem
     };
     ```
-5. Only quote properties that are invalid identifiers.
+   5. Only quote properties that are invalid identifiers.
 
-  ```javascript
-  // bad
-  const bad = {
-    'foo': 3,
-    'bar': 4,
-    'data-blah': 5,
-  };
+     ```javascript
+     // bad
+     const bad = {
+       'foo': 3,
+       'bar': 4,
+       'data-blah': 5,
+     };
 
-  // good
-  const good = {
-    foo: 3,
-    bar: 4,
-    'data-blah': 5,
-  };
-  ```
+     // good
+     const good = {
+       foo: 3,
+       bar: 4,
+       'data-blah': 5,
+     };
+     ```
 6. Prefer the object spread operator over to shallow-copy objects. Use the object rest operator to get a new object with certain properties omitted.
 
   ```javascript
