@@ -25,3 +25,39 @@
     console.log(a); // ReferenceError
     console.log(b); // ReferenceError
     ```
+    3. Use object method shorthand.
+
+    ```javascript
+    // bad
+    const atom = {
+      value: 1,
+
+      addValue: function (value) {
+        return atom.value + value;
+      },
+    };
+
+    // good
+    const atom = {
+      value: 1,
+
+      addValue(value) {
+        return atom.value + value;
+      },
+    };
+    ```
+    4. Use property value shorthand. 
+
+    ```javascript
+    const posSystem = 'Super POS system';
+
+    // bad
+    const obj = {
+      posSystem: posSystem,
+    };
+
+    // good
+    const obj = {
+      posSystem
+    };
+    ```
