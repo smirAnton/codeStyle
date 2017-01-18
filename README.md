@@ -25,7 +25,7 @@
     console.log(a); // ReferenceError
     console.log(b); // ReferenceError
     ```
-    3. Use object method shorthand.
+   3. Use object method shorthand.
 
     ```javascript
     // bad
@@ -46,7 +46,7 @@
       },
     };
     ```
-    4. Use property value shorthand. 
+   4. Use property value shorthand. 
 
     ```javascript
     const posSystem = 'Super POS system';
@@ -61,3 +61,20 @@
       posSystem
     };
     ```
+ 5. Only quote properties that are invalid identifiers.
+
+  ```javascript
+  // bad
+  const bad = {
+    'foo': 3,
+    'bar': 4,
+    'data-blah': 5,
+  };
+
+  // good
+  const good = {
+    foo: 3,
+    bar: 4,
+    'data-blah': 5,
+  };
+  ```
