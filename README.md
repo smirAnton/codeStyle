@@ -1,5 +1,5 @@
 #  POS application JavaScript Style Guide
-  - [1](#references--disallow-var) If you must reassign references, use `let` instead of `var`.
+  - [1] If you must reassign references, use `let` instead of `var`.
 
     ```javascript
     // bad
@@ -13,4 +13,15 @@
     if (true) {
       count += 1;
     }
+    ```
+  - [2] Note that both `let` and `const` are block-scoped.
+
+    ```javascript
+    // const and let only exist in the blocks they are defined in.
+    {
+      let a = 1;
+      const b = 1;
+    }
+    console.log(a); // ReferenceError
+    console.log(b); // ReferenceError
     ```
