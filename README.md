@@ -1,16 +1,18 @@
-# POS application
-# Code Style
+#  POS application JavaScript Style Guide
+  - [1](#references--disallow-var) If you must reassign references, use `let` instead of `var`.
 
-1. If you must reassign references, use let instead of var. eslint: no-var jscs: disallowVar
+    > Why? `let` is block-scoped rather than function-scoped like `var`.
 
-// bad<br/>
-var count = 1;<br/>
-if (true) {<br/>
-  count += 1;<br/>
-}<br/>
+    ```javascript
+    // bad
+    var count = 1;
+    if (true) {
+      count += 1;
+    }
 
-// good, use the let.
-let count = 1;
-if (true) {
-  count += 1;
-}
+    // good, use the let.
+    let count = 1;
+    if (true) {
+      count += 1;
+    }
+    ```
