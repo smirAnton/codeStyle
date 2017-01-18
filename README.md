@@ -1,4 +1,12 @@
 #  POS application JavaScript Style Guide
+
+<b>Important!</b>
+<b>Use eslint with rules provided in .eslintrc (check root project's folder)</b>
+
+In general we follows <b>airbnb</b> rules.
+
+Please check the most valiable rules below:
+
    1. If you must reassign references, use `let` instead of `var`.
 
     ```javascript
