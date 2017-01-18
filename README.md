@@ -1,5 +1,5 @@
 #  POS application JavaScript Style Guide
-  - [1] If you must reassign references, use `let` instead of `var`.
+   1. If you must reassign references, use `let` instead of `var`.
 
     ```javascript
     // bad
@@ -14,7 +14,7 @@
       count += 1;
     }
     ```
-  - [2] Note that both `let` and `const` are block-scoped.
+   2. Note that both `let` and `const` are block-scoped.
 
     ```javascript
     // const and let only exist in the blocks they are defined in.
