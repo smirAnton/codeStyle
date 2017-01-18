@@ -123,7 +123,7 @@
        // good
        const [first, second] = arr;
        ``` 
-  9. Strings that cause the line to go over 100 characters should not be written across multiple lines using string concatenation.
+ 9. Strings that cause the line to go over 100 characters should not be written across multiple lines using string concatenation.
 
     ```javascript
     // bad
