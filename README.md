@@ -300,7 +300,51 @@ Please check the most common our rules below:
     ))}
     ```
     
-  4. If your component has multi-line properties, close its tag on a new line.
+  4. To bind event handlers for the render method use arrow function.
+
+    ```jsx
+    // bad
+    class extends React.Component {
+      onClickDiv() {
+        // do stuff
+      }
+
+      render() {
+        return <div onClick={this.onClickDiv.bind(this)} />
+      }
+    }
+
+    // bad
+    class extends React.Component {
+      constructor(props) {
+        super(props);
+
+        this.onClickDiv = this.onClickDiv.bind(this);
+      }
+
+      onClickDiv() {
+        // do stuff
+      }
+
+      render() {
+        return <div onClick={this.onClickDiv} />
+      }
+    }
+    
+    // good
+    class extends React.Component {
+     
+      onClickDiv = () => {
+        // do stuff
+      }
+
+      render() {
+        return <div onClick={this.onClickDiv} />
+      }
+    }
+    ```
+    
+  5. If your component has multi-line properties, close its tag on a new line.
 
     ```jsx
     // bad
