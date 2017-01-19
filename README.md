@@ -279,3 +279,24 @@ Please check the most common our rules below:
       return <div>{hello}</div>;
     }
     ```
+    
+  3. Avoid using an array index as `key` prop, prefer a unique ID. 
+
+    ```jsx
+    // bad
+    {todos.map((todo, index) =>
+      <Todo
+        {...todo}
+        key={index}
+      />
+    )}
+
+    // good
+    {todos.map(todo => (
+      <Todo
+        {...todo}
+        key={todo.id}
+      />
+    ))}
+    ```
+
