@@ -168,7 +168,7 @@ Please check the most common our rules below:
     export default function foo() {}
     ```
     
- 12.  Put all `import`s above non-import statements.
+  12.  Put all `import`s above non-import statements.
 
     ```javascript
     // bad
@@ -184,7 +184,7 @@ Please check the most common our rules below:
     foo.init();
     ```
     
- 13. Multiline imports should be indented just like multiline array and object literals.
+  13. Multiline imports should be indented just like multiline array and object literals.
 
     ```javascript
     // bad
@@ -200,7 +200,7 @@ Please check the most common our rules below:
     } from 'path';
     ```
     
-   14. Avoid unneeded ternary statements.
+  14. Avoid unneeded ternary statements.
 
     ```javascript
     // bad
@@ -213,7 +213,7 @@ Please check the most common our rules below:
     const bar = !!c;
     const baz = !c;
     ```
-   15. Use braces with all multi-line blocks.
+  15. Use braces with all multi-line blocks.
 
     ```javascript
     // bad
