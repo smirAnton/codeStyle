@@ -8,7 +8,8 @@ In general we follows <b>airbnb</b> rules.
 Please check the most common our rules below:
 
 # JavaScript
-1. If you must reassign references, use `let` instead of `var`.
+
+  1. If you must reassign references, use `let` instead of `var`.
 
     ```javascript
     // bad
@@ -23,7 +24,7 @@ Please check the most common our rules below:
       count += 1;
     }
     ```
-   2. Note that both `let` and `const` are block-scoped.
+  2. Note that both `let` and `const` are block-scoped.
 
     ```javascript
     // const and let only exist in the blocks they are defined in.
@@ -34,7 +35,7 @@ Please check the most common our rules below:
     console.log(a); // ReferenceError
     console.log(b); // ReferenceError
     ```
-   3. Use object method shorthand.
+  3. Use object method shorthand.
 
     ```javascript
     // bad
@@ -55,7 +56,7 @@ Please check the most common our rules below:
       },
     };
     ```
-   4. Use property value shorthand. 
+  4. Use property value shorthand. 
 
     ```javascript
     const posSystem = 'Super POS system';
@@ -70,7 +71,7 @@ Please check the most common our rules below:
       posSystem
     };
     ```
-   5. Only quote properties that are invalid identifiers.
+  5. Only quote properties that are invalid identifiers.
 
      ```javascript
      // bad
@@ -87,7 +88,7 @@ Please check the most common our rules below:
        'data-blah': 5,
      };
      ```
-   6. Prefer the object spread operator over to shallow-copy objects. Use the object rest operator to get a new object with certain properties omitted.
+  6. Prefer the object spread operator over to shallow-copy objects. Use the object rest operator to get a new object with certain properties omitted.
 
      ```javascript
      // very bad
@@ -105,7 +106,7 @@ Please check the most common our rules below:
 
      const { a, ...noA } = copy; // noA => { b: 2, c: 3 }
      ```
-   7. Use array spreads `...` to copy arrays.
+  7. Use array spreads `...` to copy arrays.
 
        ```javascript
        // bad
@@ -120,7 +121,7 @@ Please check the most common our rules below:
        // good
        const itemsCopy = [...items];
        ```
-   8. Use array destructuring. 
+  8. Use array destructuring. 
     
        ```javascript
        const arr = [1, 2, 3, 4];
@@ -132,7 +133,7 @@ Please check the most common our rules below:
        // good
        const [first, second] = arr;
        ``` 
-   9.  Do not unnecessarily escape characters in strings.
+  9.  Do not unnecessarily escape characters in strings.
 
     ```javascript
     // bad
@@ -142,7 +143,7 @@ Please check the most common our rules below:
     const foo = `my name is '${name}'`;
     ```
     
-   10. When you must use function expressions (as when passing an anonymous function), use arrow function notation. 
+ 10. When you must use function expressions (as when passing an anonymous function), use arrow function notation. 
   
     ```javascript
        // bad
