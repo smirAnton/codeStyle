@@ -7,7 +7,8 @@ In general we follows <b>airbnb</b> rules.
 
 Please check the most common our rules below:
 
-   1. If you must reassign references, use `let` instead of `var`.
+# JavaScript
+1. If you must reassign references, use `let` instead of `var`.
 
     ```javascript
     // bad
@@ -166,7 +167,7 @@ Please check the most common our rules below:
     export default function foo() {}
     ```
     
-   12.  Put all `import`s above non-import statements.
+ 12.  Put all `import`s above non-import statements.
 
     ```javascript
     // bad
@@ -182,7 +183,7 @@ Please check the most common our rules below:
     foo.init();
     ```
     
-    13. Multiline imports should be indented just like multiline array and object literals.
+ 13. Multiline imports should be indented just like multiline array and object literals.
 
     ```javascript
     // bad
