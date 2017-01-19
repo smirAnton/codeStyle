@@ -269,9 +269,13 @@ Please check the most common our rules below:
       }
     }
 
-    // good
+    // bad (relying on function name inference is discouraged)
     const Listing = ({ hello }) => (
       <div>{hello}</div>
     );
 
+    // good
+    function Listing({ hello }) {
+      return <div>{hello}</div>;
+    }
     ```
