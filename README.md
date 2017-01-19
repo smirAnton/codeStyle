@@ -5,7 +5,7 @@
 
 In general we follows <b>airbnb</b> rules.
 
-Please check the most common our rules below:
+Please check the most common our rules below.
 
 # JavaScript
 
