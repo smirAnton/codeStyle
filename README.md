@@ -143,7 +143,7 @@ Please check the most common our rules below:
     const foo = `my name is '${name}'`;
     ```
     
- 10. When you must use function expressions (as when passing an anonymous function), use arrow function notation. 
+  10. When you must use function expressions (as when passing an anonymous function), use arrow function notation. 
   
     ```javascript
        // bad
@@ -158,7 +158,7 @@ Please check the most common our rules below:
          return x * y;
        });
     ```
- 11. In modules with a single export, prefer default export over named export.
+  11. In modules with a single export, prefer default export over named export.
 
     ```javascript
     // bad
