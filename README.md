@@ -299,4 +299,19 @@ Please check the most common our rules below:
       />
     ))}
     ```
+    
+  4. If your component has multi-line properties, close its tag on a new line.
+
+    ```jsx
+    // bad
+    <Foo
+      bar="bar"
+      baz="baz" />
+
+    // good
+    <Foo
+      bar="bar"
+      baz="baz"
+    />
+    ```
 
