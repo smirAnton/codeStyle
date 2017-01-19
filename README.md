@@ -236,3 +236,42 @@ Please check the most common our rules below:
       return false;
     }
     ```
+    
+ # React
+ 
+  1. If you have internal state and/or refs, prefer class extends React.Component over React.createClass unless you have a very good reason to use mixins.
+
+    ```jsx
+    // bad
+    const Listing = React.createClass({
+      // ...
+      render() {
+        return <div>{this.state.hello}</div>;
+      }
+    });
+
+    // good
+    class Listing extends React.Component {
+      // ...
+      render() {
+        return <div>{this.state.hello}</div>;
+      }
+    }
+    ```
+    
+  2.  If you don't have state or refs, prefer normal functions (not arrow functions) over classes:
+
+    ```jsx
+    // bad
+    class Listing extends React.Component {
+      render() {
+        return <div>{this.props.hello}</div>;
+      }
+    }
+
+    // good
+    const Listing = ({ hello }) => (
+      <div>{hello}</div>
+    );
+
+    ```
